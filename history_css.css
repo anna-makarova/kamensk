@@ -1,0 +1,157 @@
+body {
+    margin: 0;
+}
+.container {
+    display: grid;
+}
+.random-back {
+    width:100%;
+}
+.street-block {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    height: 350px;
+    margin-top: 50px;
+    position: relative;
+    z-index:1;
+    overflow:hidden; /*if you want to crop the image*/
+}
+.street-block:before{
+    z-index:-1;
+    position:absolute;
+    left:0;
+    top:0;
+    content: url(./img/hist-back-street.jpg);
+    opacity:0.4;
+}
+.anotation {
+    position: relative;
+    height: 346px;
+    top:1px;
+}
+.anotation .text {
+    font-family: "Open Sans Condensed", serif;
+    font-size: 24px;
+    line-height: 1.5;
+    background: white;
+}
+.anotation .note {
+    position: absolute;
+    width:300px;
+    bottom:10px;
+    right:0;
+    font-family: "Open Sans Condensed", serif;
+    font-size: 16px;
+    text-align: right;
+    line-height: 1.5;
+    background: white;
+}
+.abstract-block-one {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    margin-top: 50px;
+    position: relative;
+    height: 1000px;
+    z-index:1;
+    overflow:hidden; /*if you want to crop the image*/
+}
+.abstract-block-one:before {
+    z-index: -1;
+    position: absolute;
+    left: 0;
+    top: 0;
+    content: url(./img/hist-back-abstract.jpg);
+    opacity: 0.8;
+}
+.info-part {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+.part-one {
+
+}
+.service {
+    height: 400px;
+    position: relative;
+}
+.abstract-text-1{
+    position: absolute;
+    top: 90px;
+    left: 200px;
+    width: 600px;
+    background: white;
+}
+.abstract-text-1 .text {
+    margin-left: 100px;
+    font-family: "Open Sans Condensed", serif;
+    font-size: 18px;
+    line-height: 1.5;
+}
+.part-two{
+    position: relative;
+}
+.abstract-text-2{
+    position: absolute;
+    top: 50px;
+    left: 70px;
+    width: 600px;
+    background: white;
+}
+.abstract-text-2 .text {
+    padding-left: 15px;
+    font-family: "Open Sans Condensed", serif;
+    font-size: 18px;
+    line-height: 1.5;
+}
+.year-part {
+
+}
+.year {
+    width: 60%;
+    background-color: #EBE4E4;
+    opacity:80%
+}
+.text-year {
+    color: white;
+    font-size: 35px;
+    background-color: #820D1D;
+}
+.abstract-block-two {
+    margin-top: 50px;
+}
+.abstract-block-two-back {
+    width: 100%;
+    opacity: 30%;
+}
+.paper-block {
+    margin-top: 50px;
+}
+.paper-block-back {
+    width: 100%;
+    opacity: 60%;
+}
+.wall-block {
+    margin-top: 50px;
+}
+.wall-block-back {
+    width: 100%;
+    opacity: 20%;
+}
+.windows-block {
+    margin-top: 50px;
+}
+.windows-block-back {
+    width: 100%;
+    opacity: 25%;
+}
+.clouds-block {
+    margin-top: 50px;
+}
+.clouds-block-back {
+    width: 100%;
+    opacity: 30%;
+}
+.white-block-back{
+    width: 100%;
+    opacity: 30%;
+}
